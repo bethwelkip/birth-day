@@ -4,6 +4,9 @@
 
 
 function validate(){
+  var day = document.getElementsByName('date').value()
+  var month = document.getElementsByName('month').value()
+  
 
 }
 
