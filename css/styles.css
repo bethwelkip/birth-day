@@ -1,0 +1,16 @@
+body{
+  background-color: green;
+  font-family: sans-serif;
+  text-align: center;
+}
+header{
+  align-items: center;
+  height: 10vh;
+  margin: auto;
+  width: 25%;
+  font-weight: 400;
+
+}
+.result{
+  box-sizing: content-box;
+}
