@@ -1,16 +1,23 @@
-body{
-  background-color: green;
+body {
   font-family: sans-serif;
   text-align: center;
+  background-image: url('./img/akan.jpg');
 }
-header{
+.header{
   align-items: center;
   height: 10vh;
   margin: auto;
   width: 25%;
   font-weight: 400;
+  text-decoration-color: blue;
 
 }
 .result{
   box-sizing: content-box;
+}
+.form{
+  padding-left: 110px;
+  text-decoration-color: red;
+  font-size: 12px;
+  box-sizing:12px 24px;
 }
