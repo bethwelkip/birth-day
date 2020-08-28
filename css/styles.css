@@ -1,7 +1,12 @@
+*{
+  background-image: url('./img/akan3.jpg');
+}
 body {
   font-family: sans-serif;
   text-align: center;
-  background-image: url('./img/akan.jpg');
+  background-image: url('./img/akan2.jpg');
+  opacity: 1.5;
+  color: white;
 }
 .header{
   align-items: center;
@@ -9,15 +14,20 @@ body {
   margin: auto;
   width: 25%;
   font-weight: 400;
-  text-decoration-color: blue;
+  color: #178DFA;
+
 
 }
 .result{
   box-sizing: content-box;
 }
 .form{
+  background: transparent;
   padding-left: 110px;
   text-decoration-color: red;
   font-size: 12px;
   box-sizing:12px 24px;
+}
+.img {
+  opacity: 0.1;
 }
