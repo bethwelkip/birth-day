@@ -1,26 +1,17 @@
 
 
 
-
+form.addEventListener('submit', e => {
+	e.preventDefault();
+  alert("here");
+	validate();
+});
 
 function validate(){
-  var day = document.getElementsByName('date').value()
-  var month = document.getElementsByName('month').value()
-  var gender = document.getElementsByName('gender').value()
-
+  const day = document.getElementsByName('date').value();
+  var date = new Date(day);
+  const weekday = date.getDay();
+  alert( "Please provide your name!" );
+  alert(weekday);
 
 }
-
-function day(day, month, year) {
-
-var male = [Kwasi,  Kwadwo, Kwabena, Kwaku, Yaw, Kofi, Kwame]
-var female = [Akosua,  Adwoa, Abenaa, Akua,  Yaa,  Afua, Ama]
-var tot = document.getElementsByName("form").element[0];
-alert(tot)
-}
-
-var day = document.getElementsByName('date');
-var month = document.getElementsByName('month');
-var year = document.getElementsByName('year');
-
-document.addEventListener("DOMLoaded", validate())
