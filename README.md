@@ -12,7 +12,7 @@ This codebase is standalone and does not require any other code.To run this webp
 ## Known Bugs
 There are no known bugs at the moment. If any is discovered, please don't hesitate to contact me.
 ## Link to Github page
-https://bethwelkip.github.io/first-portfolio/
+https://bethwelkip.github.io/birth-day/
 ## Support and contact details
 Please reach out to me at bkiplimo@princeton.edu if you have any questions
 or concerns.
