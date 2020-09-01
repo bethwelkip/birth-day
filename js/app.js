@@ -1,40 +1,35 @@
-const males = [];
-const females = [];
-const gender = document.getElementById('gender').value();
+var males = ['Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', "Kofi", "Kwame", 'Kwasi'];
+var females = ['Adwoa', 'Abenaa', 'Akua', 'Yaa', "Afua", "Ama", 'Akosua'];
+var gender = form.elements["gender"];
+
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	validate();
 });
 
-function validate(){
-  const day = document.getElementsByName('date').value();
-  var date = new Date(Date.parse(day));
-  const dateString = date.toDateString().split(" ");
-	var weekday = dateString[0];
-	if (dateString[3] > 2020 || dateString[3] < 1900){
-		document.innerHTML
+function validate() {
+	var day = document.getElementById("date").value;
+	var date = new Date(Date.parse(day));
+	var today = new Date();
+
+	var weekday = date.getDay();
+
+	if ((date.getFullYear() > today.getFullYear() || date.getFullYear() < 1900) ||
+		date.getFullYear() === today.getFullYear() && date.getMonth() >= today.getMonth()
+		&& date.getDate() > today.getDate()) {
+		alert("Please Enter a Valid Date");
 	}
-	else{
-		console.log(weekday);
+	else {
 		akanName(weekday);
 	}
+}
 
-}
-function dayOfWeek(weekday){
-	if weekday === 'Mon'{return 1;}
-	else if(weekday === 'Tue'){ return 2;}
-	else if(weekday === 'Wed'){return 3;}
-	else if (weekday === 'Thu'){return 4;}
-	else if(weekday === 'Fri'){return 5;}
-	else if (weekday=== 'Sat'){return 6;}
-	else{return 0;}
-}
-function akanName(weekday){
-	if (gender == 'male'){
-		document.getElementById("result").innerHTML = "You were born on a" + weekday + "and your Akan Name is" + males[dayOfWeek(weekday)] + "!"
+function akanName(weekday) {
+	if (gender[0].checked) {
+		document.getElementById("result").innerHTML = "Your Akan Name is " + males[weekday] + "!";
 	}
-	else{
-	document.getElementById("result").innerHTML = "You were born on a" + weekday + "and your Akan Name is" + females[dayOfWeek(weekday)] + "!"
+	else {
+		document.getElementById("result").innerHTML = "Your Akan Name is " + females[weekday] + "!";
 	}
 }
