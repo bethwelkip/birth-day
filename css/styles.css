@@ -1,10 +1,11 @@
 *{
-  background-image: url('/Users/bethwelkiplimo/Desktop/Port/birth-day/img/akan2.jpg');
+  background-image: url('../img/akan2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body {
   font-family: sans-serif;
   text-align: center;
-  background-image: url('/Users/bethwelkiplimo/Desktop/Port/birth-day/img/akan3.jpg');
   opacity: 1.5;
   color: black;
   font-size: 20px;
@@ -19,6 +20,10 @@ body {
 
 
 }
+.Gender {
+	padding: 0px 0px;
+}
+
 .result{
   box-sizing: content-box;
 }
@@ -26,9 +31,13 @@ body {
   background: transparent;
   padding-left: 110px;
   text-decoration-color: red;
-  font-size: 12px;
+  font-size: 18px;
   box-sizing:12px 24px;
+  padding: 0 0 0 0;
 }
 .img {
   opacity: 0.1;
+}
+.Submit{
+  background-color: #409D76;
 }
