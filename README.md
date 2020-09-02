@@ -8,7 +8,8 @@ This codebase is standalone and does not require any other code.To run this webp
 * Open the browser and type bethwelkip.github.io/first-portfolio/
 * click "Enter" on Windows or "Return" on Mac OSX
 * The website should then load.
-
+## Technologies
+The project incorporates HTML, CSS and Javascript.
 ## Known Bugs
 There are no known bugs at the moment. If any is discovered, please don't hesitate to contact me.
 ## Link to Github page
